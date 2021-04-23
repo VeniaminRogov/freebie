@@ -1,0 +1,54 @@
+.section__quotes {
+	background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
+}
+
+.quotes__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 45%;
+}
+
+.quotes__info {
+	text-align: left;
+	// margin-right: $base * 26;
+}
+
+.quotes__text {
+	@include opensans;
+	font-weight: $fw-bold;
+	font-size: $fs-sm;
+	line-height: 2;
+}
+
+.quotes-slider {
+	margin-bottom: $base * 19;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: $base * 16;
+		height: $base * 16;
+		border-radius: 100%;
+		background: #fff url("../../img/quotes-slider-img.png");
+		overflow: hidden;
+		bottom: -25%;
+		left: 50%;
+		transform: translate(-50%, -25%);
+		// left: 50%;
+		// transform: translate(-50%, -75%);
+	}
+}
+
+.quotes-slider__item {
+	background-color: #fff;
+	width: 425px;
+	padding: $base * 10 $base * 18;
+}
+
+.quotes-slider__text {
+	font-weight: $fw-regular;
+	font-size: $fs-md;
+	letter-spacing: 3;
+}

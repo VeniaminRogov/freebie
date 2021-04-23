@@ -1,0 +1,18 @@
+.section__footer {
+	border-bottom: none;
+}
+
+.footer__inner {
+	padding-top: $padding-vertical-sm;
+	padding-bottom: $padding-vertical-sm;
+}
+
+.copy {
+	@include quicksand;
+	font-weight: $fw-medium;
+	font-size: $fs-sm;
+	color: #aeb8d0;
+
+	margin-left: $base * 24;
+	margin-top: $base * 7;
+}

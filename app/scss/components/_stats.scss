@@ -1,0 +1,41 @@
+.section__stats {
+	background-color: #e9efff;
+	display: flex;
+}
+
+.stats__left,
+.stats__right {
+	display: flex;
+	flex-direction: column;
+	padding: $base * 16 $base * 22;
+	flex-basis: 50%;
+}
+
+.stats__left {
+	align-items: flex-end;
+	text-align: right;
+	color: #fff;
+	background: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+}
+
+.stats__icon {
+	margin-bottom: $base * 6;
+}
+
+.stats__digit {
+	@include quicksand;
+	font-weight: $fw-regular;
+	font-size: $fs-xl;
+	margin-bottom: $base * 7;
+}
+
+.stats__text {
+	@include quicksand;
+	font-weight: $fw-medium;
+	font-size: $fs-lg;
+	width: 50%;
+}
+
+.stats__right {
+	color: #5e80ff;
+}

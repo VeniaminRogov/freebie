@@ -1,0 +1,53 @@
+.section__plan-and-manage {
+	background-color: #f5f8ff;
+	position: relative;
+	overflow: hidden;
+}
+
+.plan-and-manage__content {
+	width: 50%;
+}
+
+.plan-and-manage__content-img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.plan-and-manage__content-title {
+	font-weight: $fw-light;
+	margin-bottom: $base * 7;
+}
+
+.plan-and-manage__content-text {
+	line-height: 2;
+	margin-bottom: $base * 12;
+}
+
+.plan-and-manage__content-btn {
+}
+
+.plan-and-manage__content-btn--blue {
+	padding: 13px 25px;
+	color: #fff;
+	background-color: #4c85ff;
+
+	&:hover {
+		background-color: darken(#4c85ff, 5%);
+	}
+
+	svg {
+		margin-left: $base;
+	}
+}
+
+.plan-and-manage__content-btn--no-bg {
+	padding: 12px 21px;
+	color: #adb4d2;
+	border: 1px solid #d1d1e4;
+
+	&:hover {
+		color: darken(#adb4d2, 10%);
+		border: 1px solid darken(#d1d1e4, 10%);
+	}
+}

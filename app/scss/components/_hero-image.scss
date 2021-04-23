@@ -1,0 +1,57 @@
+// === HERO-IMAGE ===
+
+.section__hero-image {
+	background-color: #f4f7ff;
+	position: relative;
+}
+
+.slider-hero-image__item {
+	height: $base * 140;
+
+	text-align: center;
+
+	background-size: contain;
+	background-position: 50% 50%;
+}
+
+.slider-hero-image__title {
+	font-weight: $fw-light;
+}
+
+.title--med {
+	font-weight: $fw-medium;
+}
+
+.slider-hero-image__text {
+	width: 60%;
+
+	line-height: 2;
+
+	margin: 0 auto;
+	margin-bottom: $base * 5;
+}
+
+.slider-hero-image__icon-play {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: $base * 13;
+	height: $base * 13;
+
+	border-radius: 100%;
+
+	background-color: #fff;
+	box-shadow: 0 10px 50px rgba(#c9d1e7, 0.6);
+
+	svg {
+		width: $base * 3;
+		height: $base * 3;
+	}
+}
+
+.slider-hero-image__dots {
+	position: absolute;
+	bottom: $base * 7;
+	left: 50%;
+	transform: translateX(-50%);
+}

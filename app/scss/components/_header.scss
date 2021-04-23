@@ -1,0 +1,89 @@
+// === HEADER===
+
+.header-wrapper {
+	padding-top: $padding-vertical-xs;
+	padding-bottom: $padding-vertical-xs;
+}
+
+.section__header {
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: $base * 6;
+	height: $base * 6;
+	border-radius: 100%;
+	background-color: #5e81fe;
+	margin-right: $base * 18;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+	& + & {
+		margin-left: $base * 10;
+	}
+}
+
+.menu__link {
+	@include quicksand;
+	font-weight: $fw-medium;
+	font-style: $fs-md;
+	color: $color-primary;
+	transition: $transition;
+
+	&:hover {
+		color: $color-secondary;
+	}
+
+	&--active {
+		font-weight: $fw-bold;
+		color: $color-secondary;
+	}
+}
+
+.social {
+	margin-left: auto;
+}
+
+.menu-social__list {
+	display: flex;
+	align-items: center;
+}
+.menu-social__item {
+	& + & {
+		margin-left: $base * 10;
+	}
+}
+.menu-social__link {
+	path {
+		fill: #b6bac7;
+		transition: $transition;
+	}
+
+	&:hover {
+		path {
+			fill: $color-secondary;
+		}
+	}
+}
+
+.header__btn {
+	margin-left: $base * 11;
+	color: #3a79ff;
+	background-color: #d2e1ff;
+	padding: $base * 3 $base * 4;
+	border-radius: 2px;
+
+	&:hover {
+		background-color: darken(#d2e1ff, 10%);
+		color: darken(#3a79ff, 10%);
+	}
+}
+// === / HEADER===

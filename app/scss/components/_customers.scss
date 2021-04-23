@@ -1,0 +1,27 @@
+.customers__inner {
+	padding-top: $padding-vertical-sm;
+	padding-bottom: $padding-vertical-sm;
+}
+
+.customers__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.customers__item {
+}
+
+.customers__link {
+	path {
+		fill: #d6dae5;
+		transition: $transition;
+	}
+
+	&:hover {
+		path {
+			fill: $color-secondary;
+		}
+	}
+}
+// #5982E7
